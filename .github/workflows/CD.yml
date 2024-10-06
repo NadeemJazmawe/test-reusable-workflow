@@ -98,11 +98,11 @@ jobs:
         needs: Release
         uses: ./.github/workflows/Deploy-2.yml
 
-    Docker:
-        name: Docker
-        needs: CI
-        uses: ./.github/workflows/Docker.yml
-        secrets: inherit
-        permissions:
-          contents: read
-          packages: write
+    # Docker:
+    #     name: Docker
+    #     needs: CI
+    #     uses: ./.github/workflows/Docker.yml
+    #     secrets: inherit
+    #     permissions:
+    #       contents: read
+    #       packages: write
