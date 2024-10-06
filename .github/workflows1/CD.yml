@@ -1,0 +1,18 @@
+name: Main Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  call-reusable-workflow-1:
+    uses: ./.github/workflows/reusable-workflow-1.yml
+    with:
+      example-input-1: "Hello from main workflow to workflow 1"
+
+  call-reusable-workflow-2:
+    uses: ./.github/workflows/reusable-workflow-2.yml
+    with:
+      example-input-2: "Hello from main workflow to workflow 2"
