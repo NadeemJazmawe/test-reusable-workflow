@@ -6,6 +6,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   combined-job:
@@ -21,7 +22,7 @@ jobs:
         with:
           example-input-2: "Hello from main workflow to workflow 2"
 
-          
+
 # name: CD
 
 # on:
