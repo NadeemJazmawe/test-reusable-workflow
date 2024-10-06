@@ -12,11 +12,5 @@ jobs:
   reusable_job_1:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: Print input 1
-        run: "echo 'Input value 1: ${{ inputs.example-input-1 }}'"
+        run: echo "Input value 1: ${{ inputs.example-input-1 }}"
