@@ -103,3 +103,6 @@ jobs:
         needs: CI
         uses: ./.github/workflows/Docker.yml
         secrets: inherit
+        permissions:
+          contents: read
+          packages: write
