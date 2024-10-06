@@ -34,6 +34,7 @@ on:
           
 jobs:
   Create-version-Number:
+    name: ""
     uses: ./.github/workflows/Create-version-Number.yml
     secrets: inherit
 
