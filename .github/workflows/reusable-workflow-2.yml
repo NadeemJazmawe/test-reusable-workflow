@@ -1,0 +1,19 @@
+# .github/workflows/reusable-workflow-2.yml
+name: Reusable Workflow 2
+
+on:
+  workflow_call:
+    inputs:
+      example-input-2:
+        required: true
+        type: string
+
+jobs:
+  reusable_job_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Print input 2
+        run: "echo 'Input value 2: ${{ inputs.example-input-2 }}'"
