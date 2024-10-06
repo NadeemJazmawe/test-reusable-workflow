@@ -34,9 +34,18 @@ on:
           
 jobs:
   Create-version-Number:
-    name: ""
-    uses: ./.github/workflows/Create-version-Number.yml
-    secrets: inherit
+    runs-on: ubuntu-latest
+    steps:
+      - name : Create-version-Number1 
+        uses: ./.github/workflows/Create-version-Number.yml
+        with:
+          inherit-secrets: true
+
+      - name : Create-version-Number2 
+        uses: ./.github/workflows/Create-version-Number2.yml
+        with:
+          inherit-secrets: true
+
 
                
   # CI:

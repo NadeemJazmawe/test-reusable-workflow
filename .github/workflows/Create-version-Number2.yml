@@ -1,0 +1,11 @@
+name: Create Version Number2
+
+on:
+    workflow_call:
+
+jobs:
+    print-hello-world:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Hello World2
+              run: echo "Hello, World2!"
